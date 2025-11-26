@@ -1,14 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Weather App</h1>
+
+    <header>
+        <div class="headerTag">
+            <h1>Weather Update</h1>
+        </div>
+
+        <div>
+
+            <input type="text" name="q" placeholder="Search..." id="txtSearch">
+            <button type="submit">Go</button>
+
+
+        </div>
+    </header>
+
+    <div class="firstDiv">
+        <div class="liveData">
+
+            <h2 style="margin-bottom: 0%;">Live Forecast</h2>
+
+            <div class="liveLayoutCustom">
+                <div style="display: flex; flex-direction: row; gap: 20px;align-items: center;">
+                    <h4 id="city_name">Panadura</h4>
+                    <h4 id="current_temperature">30.0°C</h4>
+                    <h4 id="country_name">Clear</h4>
+                    <img id="main_status_image"
+                        src="https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000" alt="" srcset=""
+                        style="width: 60px; height: 60px; margin: 0%;">
+                </div>
+
+                <div>2025 January 25</div>
+
+            </div>
+
+        </div>
+
+        <div class="otherData">
+            <h2>More Information</h2>
+
+            <div class="moreInfo">
+                <p>UV</p>
+                <p id="uv_value">30</p>
+                <!-- <img src="https://img.icons8.com/?size=100&id=NqHVIKFpZF9c&format=png&color=000000" alt="" srcset=""
+                    class="infoImages"> -->
+            </div>
+
+            <div class="moreInfo">
+                <p>Humidity</p>
+                <p id="humidity_value">30</p>
+                <!-- <img src="https://img.icons8.com/?size=100&id=ifNCynmGXOFJ&format=png&color=000000" alt=""
+                    class="infoImages"> -->
+            </div>
+
+            <div class="moreInfo">
+                <p>Wind speed</p>
+                <p id="wind_value">54</p>
+                <!-- <img src="https://img.icons8.com/?size=100&id=F283aUz0gLiM&format=png&color=000000" alt="" srcset=""
+                    class="infoImages"> -->
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="secondDiv">
+
+        <div class="hourlyData">
+            <h2>Hourly Forecast</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>23.00</h3>
+                        </td>
+                        <td>
+                            <h3>Cloudy</h3>
+                        </td>
+                        <td> <img src="https://img.icons8.com/?size=100&id=zIVmoh4T8wh7&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>22.00</h3>
+                        </td>
+                        <td>
+                            <h3>Windy</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=RtDA8YDN9Mi9&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Now</h3>
+                        </td>
+                        <td>
+                            <h3>Clear</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>11.00</h3>
+                        </td>
+                        <td>
+                            <h3>Clear</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>10.00</h3>
+                        </td>
+                        <td>
+                            <h3>Light Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=QZJFPE7TNi5Q&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>9.00</h3>
+                        </td>
+                        <td>
+                            <h3>Heavy Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=6AAyqKfBlzoB&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="weeklyData">
+            <h2>5 Day Forecast (Approximated)</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Wednesday</h3>
+                        </td>
+                        <td>
+                            <h3>Light Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=QZJFPE7TNi5Q&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Tuesday</h3>
+                        </td>
+                        <td>
+                            <h3>Light Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=QZJFPE7TNi5Q&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Tommorrow</h3>
+                        </td>
+                        <td>
+                            <h3>Light Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=QZJFPE7TNi5Q&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Today</h3>
+                        </td>
+                        <td>
+                            <h3>Sunny</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Yesterday</h3>
+                        </td>
+                        <td>
+                            <h3>Heavy Rain</h3>
+                        </td>
+                        <td><img src="https://img.icons8.com/?size=100&id=6AAyqKfBlzoB&format=png&color=000000" alt=""
+                                srcset=""></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <label for="owner">Created by Pesandu Jayasinghe. All rights reserved.If you want to contact me use
+                    those links.</label>
+
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a href="https://www.linkedin.com/in/pesandu-jayasinghe-a1b4b3354/"><img
+                        src="https://img.icons8.com/?size=100&id=118979&format=png&color=000000" alt="" srcset=""
+                        class="footerImage"></a>
+                <a href="https://github.com/PesanduJayasinghe"><img
+                        src="https://img.icons8.com/?size=100&id=LoL4bFzqmAa0&format=png&color=000000" alt=""
+                        class="footerImage"></a>
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
